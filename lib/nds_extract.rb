@@ -26,5 +26,8 @@ def directors_totals(nds)
     result[director[:name]] = gross_for_director(director)
     director_index += 1
   end
-  print result
+  result
 end
+
+directors_totals([{ :name => "Test Director", :movies => []}]))
+directors_totals(directors_database)
